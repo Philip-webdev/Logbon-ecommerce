@@ -1,0 +1,83 @@
+<!Doctype html>
+    <style>
+    .card {
+  /* Add shadows to create the "card" effect */
+  transition: 0.3s;
+  width: calc(100% / 3);
+  
+}
+#big-cont{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+ width: 100%;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  width:max-content;
+  border-radius: 5%;
+}
+   
+    
+    </style>
+  
+    
+<script> 
+  
+
+
+// Show the div when the page is clicked
+
+ function showCont(event) { 
+  document.getElementByClassName('container').style.display = 'block';
+};
+
+document.getElementByClassName('tags').style.position = '';
+  
+  </script>
+<% 
+const tags = {title: 'this is title', timing: 'this shows timing', snippet: 'this is the snippet' };%>
+<% function styler(){ %>
+  
+<% } %>
+</script>
+<div id="big-cont">
+  <div class="card">
+    <img src="http://localhost:8080/public/Samsung%20Expands%208K%2C%20MicroLED%2C%20Big-Screen%20TV%20Options.jpg" style="width:150px">
+    <div class="container">
+      <h4><b><%= tags.title %></b></h4>
+      <p><%= tags.timing %></p>
+      <p><%= tags.snippet %></p>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="http://localhost:8080/public/2149176716.jpg" style="width:150px">
+    <div class="container">
+      <h4><b><%= tags.title %></b></h4>
+      <p><%= tags.timing %></p>
+      <p><%= tags.snippet %></p>
+
+    </div>
+  </div>
+
+
+  <div class="card">
+    <img src="http://localhost:8080/public/Morning%20Coffee%20%26%20Journal4.jpg" width="143px">
+    <div class="container">
+      <h4><b><%= tags.title %></b></h4>
+      <p><%= tags.timing %></p>
+      <p><%= tags.snippet %></p>
+
+  
+    </div>
+  </div>
+
+</div>
+</html>
