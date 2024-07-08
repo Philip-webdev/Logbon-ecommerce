@@ -1,0 +1,76 @@
+<html><head>
+    <style>
+    .cardd {
+        text-align: center;
+        border: 1px black;
+        background-color: whitesmoke;
+       
+      }
+      p{
+        text-decoration: none;
+        text-decoration-color: none;
+        text-underline-position: none;
+      }
+      a{
+        text-decoration: none;
+        pointer-events: painted;
+        color: white;
+      }
+      .cardd :hover{
+    
+        transition: 0.3s;
+      }
+      .price {
+        color: grey;
+      }
+      
+      .cardd button {
+        border: none;
+        outline: 0;
+        padding: 7px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        pointer-events: none;
+        cursor: pointer;
+       
+      }
+      
+      
+      #bigg-cont{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+        
+      }
+    </style>
+</head>
+<div id="bigg-cont">
+    <div class="cardd">
+        <img src="http://localhost:8080/public/Slate%20Appliances%20as%20a%20New%20Kitchen%20Trend%20I%20MyHome%20Blog.png" alt="" width="150px"height='170px'>
+        <p>Tailored Jeans</p>
+        <p class="price">$19.99</p>
+        <p>Some text about the jeans..</p>
+        <p><button><a href="/checkout">Add to cart</a></button></p>
+      </div>
+
+      <div class="cardd">
+        <img src="http://localhost:8080/public/HIGH%20DEFINITION%20TELEVISION.jpg" alt="" width="150px"height='170px'>
+        <p>Tailored Jeans</p>
+        <p class="price">$19.99</p>
+        <p>Some text about the jeans..</p>
+        <p><button><a href="/checkout">Add to cart</a></button></p>
+      </div>
+      <% Object.keys(pdt).forEach(() => { %>
+        <%  const keys = Object.keys(pdt); %>
+       <% for (let key of keys) { %>
+      <div class="cardd">
+        <img src="http://localhost:8080/public/Travel%20Essentials%20%F0%9F%A7%B3.jpg" alt="" width="150px"height='170px'>
+        <p><%= pdt[key].title %></p>
+        <p class="price"><%= pdt[key].price %></p>
+        <p><%= pdt[key].description %></p>
+        <p><button><a href="/checkout">Add to cart</a></button></p>
+      </div>
+      <% }})%>
+    </div>
+</html>
