@@ -4,7 +4,7 @@ const Blog = require('./models/blog');
 const Product = require('./models/product');
 const { padStart } = require('lodash');
 const app = express();
-const dbURI = 'mongodb+srv://phil_web:test123@cluster0.wsfgf9o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const dbURI = 'mongodb+srv://phil_web:password@cluster0.wsfgf9o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 mongoose.connect(dbURI)
 .then((result) => {app.listen(3000, () => {console.log('listening at port 3000')})})
 .catch((err) => console.log(err));
