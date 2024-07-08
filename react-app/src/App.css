@@ -1,0 +1,45 @@
+@media screen and (min-width: 800px) {
+  .notification{
+    margin-left:89%;
+  }
+}
+.All{
+  background-color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pdtdiv :hover{
+   border-color: blue;
+
+}
+
+.Display-text{
+  font-size: larger;
+  font-weight: 900;
+  right: 70%;
+
+}
+.follow-up{
+  font-size: 30px;
+  font-weight: 900;
+  right: 80%;
+  margin-left: 20px;
+
+}
+a{
+  text-decoration-color: black;
+}
+input{
+  height: 20px;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.notification{
+  border-radius: 100%;
+}
+.menu{
+  margin-left: 20px;
+}
